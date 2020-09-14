@@ -1,26 +1,27 @@
-package Programs1;
+package programs3;
 import java.util.*;
-public class Even_Odd_Count 
+public class Even_Odd_Count
 {
 	public static void main(String[] args)
 	{
 		Scanner obj = new Scanner(System.in);
-		System.out.println("enter size :");
-		int s = obj.nextInt(); //s = 8
-		int[] nums = new int[s];
-		int even = 0 , odd = 0;
+		System.out.println("enter size");
+		int s = obj.nextInt();
+		int even = 0,odd = 0;
+		int[] num = new int[s];
 		System.out.println("enter "+ s +" values ");
-		for(int i=0;i<s;i++) //0-7 ->8 values
+		for(int i=0 ; i<s ; i++)
 		{
-			nums[i] = obj.nextInt(); // 1 2 3 6 7 8 9 5
+			num[i] = obj.nextInt();
 		}
-        for(int i=0;i<s;i++) // 0-7 -> 8 values
+        for(int i=0 ; i<s ; i++)
         {
-        	if(nums[i]%2==0) //if true even
+        	if(num[i]%2==0)
         		even++;
         	else
-        		odd++; // else odd 
+        		odd++;
         }
-        System.out.println("even numbers count = "+even);
-        System.out.println("odd numbers count = "+odd);
-	}}
+        System.out.println("even number count = "+even);
+        System.out.println("odd number count = "+odd);
+	}
+}
